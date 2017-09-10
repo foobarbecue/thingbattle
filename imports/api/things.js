@@ -5,4 +5,3 @@ if (Meteor.isServer){
         return Things.find();
     });
 }
-
