@@ -2,7 +2,9 @@
     <div>
         <div v-if="!$subReady.things">Loading...</div>
         <div v-for="thing in things">
-            <thingcard :thing="thing"></thingcard>
+            <thingcard :thing="thing" class="thingcard" v-bind:style="{ bottom: thing.merit + 'px' }">
+
+            </thingcard>
         </div>
         <input type="text" v-model="newThing">
         <button @click=addThing()>add this thing</button>
@@ -30,7 +32,12 @@ export default{
         removeThing(){
             athing=Things.findOne();
             Things.remove(athing._id);
-        }
+        },
     }
 }
 </script>
+<style>
+    .thingcard {
+        position: absolute
+    }
+</style>
