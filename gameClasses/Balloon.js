@@ -10,12 +10,12 @@ var Balloon = IgeUiEntity.extend({
 
         if (ige.isClient) {
             // Load the texture file
-            this._balloonTexture = new IgeTexture('./assets/balloon.png');
+            this._balloonTexture = new IgeTexture('./assets/balloon.svg');
 
             // Wait for the texture to load
             this._balloonTexture.on('loaded', function () {
                 self.texture(self._balloonTexture)
-                    .scaleTo(1.5,1.5,1.5)
+                    .scaleTo(1.5, 2, 1)
                     .velocity.y(-0.1);
             }, false, true);
 
