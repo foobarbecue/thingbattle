@@ -15,7 +15,7 @@ var Balloon = IgeUiEntity.extend({
             // Wait for the texture to load
             this._balloonTexture.on('loaded', function () {
                 self.texture(self._balloonTexture)
-                    .scaleTo(1.5, 2, 1)
+                    .dimensionsFromTexture()
                     .velocity.y(-0.1);
             }, false, true);
 
