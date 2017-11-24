@@ -19,6 +19,8 @@ var Client = IgeClass.extend({
                 ige.addGraph('IgeBaseScene');
 
                 const baseScene = ige.$('baseScene');
+                console.log('adding lava');
+                new Lava().mount(baseScene);
                 console.log('adding balloon');
                 newBalloon = new Balloon();
                 self.balloons.push(newBalloon);
