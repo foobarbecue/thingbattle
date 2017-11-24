@@ -1,12 +1,13 @@
 var Client = IgeClass.extend({
 	classId: 'Client',
+
 	init: function () {
 		ige.showStats(1);
 
 		// Load our textures
 		var self = this;
-		this.gameTextures = {};
-		this.balloons = [];
+		self.gameTextures = {};
+		self.balloons = [];
 
         // Create the HTML canvas
         ige.createFrontBuffer(true);
@@ -17,25 +18,33 @@ var Client = IgeClass.extend({
             if (success) {
                 // Add base scene data
                 ige.addGraph('IgeBaseScene');
-
-                const baseScene = ige.$('baseScene');
+                self.viewport = new IgeViewport()
+                    .addComponent(IgeMouseZoomComponent)
+                    .mouseZoom.enabled(true)
+                    .id('viewport')
+                    .scene(ige.$('baseScene'))
+                    .mount(ige)
                 console.log('adding lava');
-                new Lava().mount(baseScene);
-                console.log('adding balloon');
-                newBalloon = new Balloon();
-                self.balloons.push(newBalloon);
-                newBalloon.mount(baseScene);
-
-                setTimeout(function () {
-					console.log('adding ANOTHER balloon (:o)');
-					newBalloon = new Balloon();
-					self.balloons.push(newBalloon);
-					newBalloon.mount(baseScene);
-                }, 1000);
-
+                new Lava().mount(ige.$('baseScene'));
+                self.balloonStream();
             }
         });
+
 	},
+
+    addBalloon: function() {
+        console.log('adding ANOTHER balloon (:o)');
+        let newBalloon = new Balloon();
+        this.balloons.push(newBalloon);
+        newBalloon.mount(ige.$('baseScene'));
+    },
+
+    balloonStream: function() {
+        this.addBalloon();
+        setTimeout(this.balloonStream.bind(this), 1000);
+    },
+
+
 });
 
 
