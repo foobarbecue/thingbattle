@@ -33,7 +33,6 @@ var Client = IgeClass.extend({
 	},
 
     addBalloon: function() {
-        console.log('adding ANOTHER balloon (:o)');
         let newBalloon = new Balloon();
         this.balloons.push(newBalloon);
         newBalloon.mount(ige.$('baseScene'));
