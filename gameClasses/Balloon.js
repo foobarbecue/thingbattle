@@ -16,12 +16,16 @@ var Balloon = IgeUiEntity.extend({
             this._balloonTexture.on('loaded', function () {
                 self.texture(self._balloonTexture)
                     .dimensionsFromTexture()
-                    .velocity.y(-0.1);
+                    .velocity.y(-0.01);
             }, false, true);
 
+            this.mouseDown(function(){this.explode()})
         }
-    },
 
+    },
+    explode: function(){
+        this.destroy()
+    }
 });
 
 

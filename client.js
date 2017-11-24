@@ -18,12 +18,13 @@ var Client = IgeClass.extend({
             if (success) {
                 // Add base scene data
                 ige.addGraph('IgeBaseScene');
-                self.viewport = new IgeViewport()
-                    .addComponent(IgeMouseZoomComponent)
-                    .mouseZoom.enabled(true)
-                    .id('viewport')
-                    .scene(ige.$('baseScene'))
-                    .mount(ige)
+                // ige.addComponent(IgeEditorComponent);
+                // self.viewport = new IgeViewport()
+                //     .addComponent(IgeMouseZoomComponent)
+                //     .mouseZoom.enabled(true)
+                //     .id('viewport')
+                //     .scene(ige.$('baseScene'))
+                //     .mount(ige);
                 console.log('adding lava');
                 new Lava().mount(ige.$('baseScene'));
                 self.balloonStream();
@@ -40,7 +41,7 @@ var Client = IgeClass.extend({
 
     balloonStream: function() {
         this.addBalloon();
-        setTimeout(this.balloonStream.bind(this), 1000);
+        setTimeout(this.balloonStream.bind(this), 10000);
     },
 
 
