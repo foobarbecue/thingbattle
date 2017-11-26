@@ -19,12 +19,13 @@ var Balloon = IgeUiEntity.extend({
                     .velocity.y(-0.01);
             }, false, true);
 
-            this.mouseDown(function(){this.explode()})
+            this.mouseDown(function(){this.explode()});
         }
 
     },
-    explode: function(){
-        this.destroy()
+    explode: function(){ // Would like to call this "pop" but seems like a bad idea
+        this.destroy();
+
     }
 });
 

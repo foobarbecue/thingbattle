@@ -19,12 +19,11 @@ var Client = IgeClass.extend({
                 // Add base scene data
                 ige.addGraph('IgeBaseScene');
                 // ige.addComponent(IgeEditorComponent);
-                // self.viewport = new IgeViewport()
-                //     .addComponent(IgeMouseZoomComponent)
-                //     .mouseZoom.enabled(true)
-                //     .id('viewport')
-                //     .scene(ige.$('baseScene'))
-                //     .mount(ige);
+                ige.$('vp1')
+                    .addComponent(IgeMouseZoomComponent)
+                    .mouseZoom.enabled(true)
+                    .scene(ige.$('baseScene'))
+                    .mount(ige);
                 console.log('adding lava');
                 new Lava().mount(ige.$('baseScene'));
                 self.balloonStream();
