@@ -4,7 +4,8 @@ var Server = IgeClass.extend({
 
 	init: function (options) {
 		var self = this;
-
+		self.balloons = [];
+		self.implement(ServerNetworkEvents);
 		// Add the networking component
 		ige.addComponent(IgeNetIoComponent)
 			// Start the network server
@@ -24,16 +25,30 @@ var Server = IgeClass.extend({
 						// Accept incoming network connections
 						ige.network.acceptConnections(true);
 
+						ige.network.define('destroyBalloon', self._destroyBalloon)
+
 						// Load the base scene data
 						ige.addGraph('IgeBaseScene');
+						self.balloonStream();
 
-                        new Balloon()
-							.streamMode(1)
-                            .mount(ige.$('baseScene'));
                     }
 				});
 			});
-	}
+	},
+
+    addBalloon: function() {
+        let newBalloon = new Balloon();
+        this.balloons.push(newBalloon);
+		newBalloon.streamMode(1)
+		    .mount(ige.$('baseScene'))
+		    .velocity.y(-0.01);
+        return newBalloon
+    },
+
+    balloonStream: function() {
+        this.addBalloon();
+        setTimeout(this.balloonStream.bind(this), 10000);
+    },
 });
 
 if (typeof(module) !== 'undefined' && typeof(module.exports) !== 'undefined') { module.exports = Server; }

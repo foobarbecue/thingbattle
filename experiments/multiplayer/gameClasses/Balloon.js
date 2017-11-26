@@ -7,7 +7,6 @@ var Balloon = IgeUiEntity.extend({
 
         // Setup the entity
         self.addComponent(IgeVelocityComponent);
-
         if (ige.isClient) {
             // Load the texture file
             this._balloonTexture = new IgeTexture('../../assets/balloon.svg');
@@ -16,15 +15,15 @@ var Balloon = IgeUiEntity.extend({
             this._balloonTexture.on('loaded', function () {
                 self.texture(self._balloonTexture)
                     .dimensionsFromTexture()
-                    .velocity.y(-0.01);
             }, false, true);
 
-            this.mouseDown(function(){this.explode()});
-        }
+            self.mouseDown(function(){self.explode()});
+
+        };
 
     },
     explode: function(){ // Would like to call this "pop" but seems like a bad idea
-        this.destroy();
+        ige.network.send('destroyBalloon', this.id());
 
     }
 });

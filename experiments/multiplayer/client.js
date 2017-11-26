@@ -9,6 +9,7 @@ var Client = IgeClass.extend({
 		// Enable networking
 		ige.addComponent(IgeNetIoComponent);
 
+
 		// Create the HTML canvas
 		ige.createFrontBuffer(true);
 
