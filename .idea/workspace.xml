@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5d9a1c-1830-4d61-80dd-272fe93cd0bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/ClientConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Lava.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Toolbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/experiments/chairlift/index.js" />
+    <list default="true" id="1d5d9a1c-1830-4d61-80dd-272fe93cd0bd" name="Default" comment="rename chairlift to chair_lift for consistency with other experiments">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/.gitignore" afterPath="$PROJECT_DIR$/experiments/chair_lift/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/ClientConfig.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/ClientConfig.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/client.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/client.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/gameClasses/Balloon.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/gameClasses/Chair.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Lava.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/gameClasses/Lava.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/gameClasses/Toolbar.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/gameClasses/Toolbar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/index.html" afterPath="$PROJECT_DIR$/experiments/chair_lift/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/experiments/chairlift/index.js" afterPath="$PROJECT_DIR$/experiments/chair_lift/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,128 +24,91 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/client.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="788">
-                  <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ClientConfig.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/ClientConfig.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Chair.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Lava.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Lava.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Balloon.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Toolbar.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Toolbar.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/experiments/chairlift/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/ige/examples/50-lander/client.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="59" />
-                  <folding>
-                    <element signature="e#1926#3907#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/Player.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="267" column="70" lean-forward="true" selection-start-line="267" selection-start-column="70" selection-end-line="267" selection-end-column="70" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PlayerBehaviour.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/PlayerBehaviour.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-249">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
-            <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/Player.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="268" column="50" lean-forward="true" selection-start-line="268" selection-start-column="50" selection-end-line="268" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/multiballoons/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/multiballoons/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chair.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/multiballoons/gameClasses/Chair.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chair.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/gameClasses/Chair.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Balloon.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/multiballoons/gameClasses/Balloon.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="27" />
+              <folding>
+                <marker date="1512286638024" expanded="true" signature="36:1667" ph="{&quot;classId&quot;: 'Balloon'...}" />
+                <marker date="1512286638024" expanded="true" signature="1663:1665" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/chair_lift/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chair.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiments/chair_lift/gameClasses/Chair.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,10 +126,25 @@
       <find>Client</find>
       <find>texture</find>
       <find>line</find>
+      <find>carryOrb</find>
+      <find>fixture</find>
+      <find>m_body</find>
+      <find>joint</find>
+      <find>ApplyForce</find>
+      <find>tick</find>
+      <find>balloon</find>
+      <find>IgeUiDrop</find>
+      <find>mount</find>
+      <find>fonten</find>
+      <find>metronic</find>
     </findStrings>
     <replaceStrings>
       <replace>Balloon</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\aaron\ige</dir>
+      <dir>C:\Users\aaron\ige\examples</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -182,10 +159,19 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/experiments/chairlift/index.html" />
         <option value="$PROJECT_DIR$/experiments/chairlift/gameClasses/Lava.js" />
-        <option value="$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js" />
         <option value="$PROJECT_DIR$/experiments/chairlift/ClientConfig.js" />
-        <option value="$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js" />
+        <option value="$PROJECT_DIR$/experiments/6.2-physics/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
+        <option value="$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js" />
         <option value="$PROJECT_DIR$/experiments/chairlift/client.js" />
+        <option value="$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js" />
+        <option value="$USER_HOME$/ige/engine/ui/IgeUiLabel.js" />
+        <option value="$PROJECT_DIR$/experiments/multiballoons/gameClasses/Balloon.js" />
+        <option value="$PROJECT_DIR$/experiments/multiballoons/client.js" />
+        <option value="$PROJECT_DIR$/experiments/multiballoons/gameClasses/Chair.js" />
+        <option value="$PROJECT_DIR$/experiments/click_to_add_remove/gameClasses/Chair.js" />
+        <option value="$PROJECT_DIR$/experiments/chair_rescue/gameClasses/Chair.js" />
+        <option value="$PROJECT_DIR$/experiments/chair_lift/gameClasses/Chair.js" />
       </list>
     </option>
   </component>
@@ -202,10 +188,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1263" />
-    <option name="height" value="1447" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -243,24 +230,127 @@
               <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
               <item name="thingbattle" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="chairlift" type="462c0819:PsiDirectoryNode" />
+              <item name="chair_lift" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
               <item name="thingbattle" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="chairlift" type="462c0819:PsiDirectoryNode" />
+              <item name="chair_rescue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thingbattle" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="chair_rescue" type="462c0819:PsiDirectoryNode" />
               <item name="gameClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
               <item name="thingbattle" type="462c0819:PsiDirectoryNode" />
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
-              <item name="zoom_n_pop" type="462c0819:PsiDirectoryNode" />
+              <item name="multiballoons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thingbattle" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
+              <item name="multiballoons" type="462c0819:PsiDirectoryNode" />
+              <item name="gameClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="2.1-viewports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="5.1-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="10.1-fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="16.2-webgl-turret-point" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="50-lander" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="51-shapes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="thingbattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ige" type="70bed36:NamedLibraryElementNode" />
+              <item name="ige" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="51-shapes" type="462c0819:PsiDirectoryNode" />
+              <item name="gameClasses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,13 +364,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/ige" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="SearchEverywhereHistoryKey" value="keymap&#9;ACTION&#9;ChangeKeymap&#10;key&#9;ACTION&#9;Help.KeymapReference" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aaron\thingbattle\experiments\chair_rescue" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aaron\thingbattle\experiments\chair_rescue" />
+      <recent name="C:\Users\aaron\thingbattle\experiments\multiballoons" />
+      <recent name="C:\Users\aaron\thingbattle\experiments" />
       <recent name="C:\Users\aaron\thingbattle\experiments\chairlift\gameClasses" />
       <recent name="C:\Users\aaron\thingbattle\experiments\chairlift" />
     </key>
@@ -449,6 +547,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1d5d9a1c-1830-4d61-80dd-272fe93cd0bd" name="Default" comment="" />
@@ -459,12 +560,69 @@
       <workItem from="1511418607585" duration="8324000" />
       <workItem from="1512106583158" duration="224000" />
       <workItem from="1512106818266" duration="1175000" />
-      <workItem from="1512192240155" duration="4033000" />
+      <workItem from="1512192240155" duration="38828000" />
     </task>
+    <task id="LOCAL-00001" summary="begin work on example with balloon attached to chair by string">
+      <created>1512196320815</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512196320815</updated>
+    </task>
+    <task id="LOCAL-00002" summary="attach balloon to chair and add upward force to balloon">
+      <created>1512260874659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512260874659</updated>
+    </task>
+    <task id="LOCAL-00003" summary="begin work on experiment with multiple balloons attached to one chair">
+      <created>1512271712249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512271712249</updated>
+    </task>
+    <task id="LOCAL-00004" summary="begin work on experiment with multiple balloons attached to one chair">
+      <created>1512271989513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512271989513</updated>
+    </task>
+    <task id="LOCAL-00005" summary="balloons mounted to chair&#10;&#10;This would be the nice way to do it, but there's an issue. The chair&#10;rises much slower than the balloon, presumably because of some sort of&#10;scaling issue that results from them not being mounted to the same&#10;parent.">
+      <created>1512278365368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1512278365368</updated>
+    </task>
+    <task id="LOCAL-00006" summary="attach balloons and they spread out nicely (w/o gravity or bouyancy)">
+      <created>1512285911677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512285911677</updated>
+    </task>
+    <task id="LOCAL-00007" summary="begin experiment where user saves falling chair with balloons&#10;&#10;Copied from chair_lift">
+      <created>1512325242300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1512325242300</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clicking on chair now adds balloon">
+      <created>1512325419760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512325419760</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13756000" />
+    <option name="totallyTimeSpent" value="48551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,57 +635,329 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16312057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09889677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.134375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15390626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.134375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1645469" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.134375" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16312057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20703125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="begin work on example with balloon attached to chair by string" />
+    <MESSAGE value="attach balloon to chair and add upward force to balloon" />
+    <MESSAGE value="begin work on experiment with multiple balloons attached to one chair" />
+    <MESSAGE value="balloons mounted to chair&#10;&#10;This would be the nice way to do it, but there's an issue. The chair&#10;rises much slower than the balloon, presumably because of some sort of&#10;scaling issue that results from them not being mounted to the same&#10;parent." />
+    <MESSAGE value="attach balloons and they spread out nicely (w/o gravity or bouyancy)" />
+    <MESSAGE value="begin experiment where user saves falling chair with balloons" />
+    <MESSAGE value="begin experiment where user saves falling chair with balloons&#10;&#10;Copied from chair_lift" />
+    <MESSAGE value="clicking on chair now adds balloon" />
+    <MESSAGE value="rename chairlift to chair_lift for consistency with other experiments" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename chairlift to chair_lift for consistency with other experiments" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/ige/examples/50-lander/gameClasses/Player.js</url>
+          <line>268</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/ige/examples/50-lander/gameClasses/Player.js</url>
+          <line>274</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$USER_HOME$/ige/examples/6.1-animation/assets/textures/sprites/vx_chara02_c.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/6.1-animation/gameClasses/Character.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="-1173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$USER_HOME$/ige/examples/5.2-screen-position/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/5.2-screen-position/screenshot1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/5.2-screen-position/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/2.1-viewports/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/1.9-composite-entity-caching/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/zoom_n_pop/index.html">
+    <entry file="file://$USER_HOME$/ige/examples/1.9-composite-entity-caching/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/1.9-composite-entity-caching/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/6.1-animation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="94" lean-forward="true" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/1.9-composite-entity-caching/gameClasses/Rotator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/14.1-isoobjects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="71" lean-forward="true" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/101-isoisland/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/50-lander/readme.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/PlayerBehaviour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1512257027846" expanded="true" signature="34:1727" ph="{...}" />
+            <marker date="1512257027846" expanded="true" signature="1149:1560" ph="{...}" />
+            <marker date="1512257027846" expanded="true" signature="1566:1633" ph="{...}" />
+            <marker date="1512257027846" expanded="true" signature="1671:1725" ph="{...}" />
+            <marker date="1512257027846" expanded="true" signature="1698:1722" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/2.4-cameras-tracking/gameClasses/Rotator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/12.1-mounting/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/12.1-mounting/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1068">
+          <caret line="74" column="50" lean-forward="true" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/15.1-isoimages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/screenshot1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/10.1-fonts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/10.1-fonts/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/5.1-ui/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="180" column="30" lean-forward="false" selection-start-line="180" selection-start-column="24" selection-end-line="180" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/16.2-webgl-turret-point/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/16.2-webgl-turret-point/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
@@ -535,23 +965,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$USER_HOME$/ige/examples/16.2-webgl-turret-point/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="304">
+          <caret line="45" column="72" lean-forward="true" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        <state relative-caret-position="136">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -559,62 +1008,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gameClasses/Balloon.js" />
-    <entry file="file://$PROJECT_DIR$/ClientConfig.js" />
-    <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/assets/balloon.jpg" />
-    <entry file="file://$USER_HOME$/ige/examples/9.1-goto/gameClasses/ClientNetworkEvents.js" />
-    <entry file="file://$USER_HOME$/ige/examples/6.2-physics/gameClasses/Character.js" />
-    <entry file="file://$USER_HOME$/ige/examples/6.2-physics/client.js" />
-    <entry file="file://$USER_HOME$/ige/examples/6.2-physics/ClientConfig.js" />
-    <entry file="file://$USER_HOME$/ige/examples/6.2-physics/index.js" />
-    <entry file="file://$USER_HOME$/ige/examples/5.1-ui/index.html" />
-    <entry file="file://$USER_HOME$/ige/examples/5.1-ui/client.js" />
-    <entry file="file://$PROJECT_DIR$/gameClasses/Balloon.js" />
-    <entry file="file://$PROJECT_DIR$/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClientConfig.js" />
-    <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/experiments/zoom_n_pop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/6.3-physics-contacts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/6.3-physics-contacts/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/index.html">
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/gameClasses/Square.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -622,7 +1016,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ServerNetworkEvents.js">
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/gameClasses/ServerNetworkEvents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -630,7 +1024,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ClientCountDown.js">
+    <entry file="file://$USER_HOME$/ige/examples/51-shapes/gameClasses/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/ige/examples/50-lander/ClientConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -638,156 +1040,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ClientNetworkEvents.js">
+    <entry file="file://$USER_HOME$/ige/examples/50-lander/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ClientScore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ClientTerrain.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="97" column="24" lean-forward="true" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ClientWorld.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/ExplosionParticle.js">
+    <entry file="file://$USER_HOME$/ige/engine/ui/IgeUiLabel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/LandingPad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/Orb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/101-isoisland/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="73" lean-forward="true" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Toolbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Lava.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="331">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <marker date="1512278989791" expanded="true" signature="177:537" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="541:751" ph="/** Extended method to auto-update the width of the child ...*/" />
+            <marker date="1512278989791" expanded="true" signature="806:1080" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="1084:1295" ph="/** Extended method to auto-update the height of the child ...*/" />
+            <marker date="1512278989791" expanded="true" signature="1351:1605" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="1609:1723" ph="/** Gets / sets the text value of the input box. ...*/" />
+            <marker date="1512278989791" expanded="true" signature="1747:2451" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="1774:2425" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="1804:2405" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="1866:2015" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2021:2357" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2098:2178" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2184:2309" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2456:2609" ph="/** Gets / sets the font sheet (texture) that the text box will ...*/" />
+            <marker date="1512278989791" expanded="true" signature="2643:2866" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2676:2836" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2892:3248" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2919:3083" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="2954:3017" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3023:3079" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3123:3182" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3188:3245" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3280:3411" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3307:3365" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3445:3580" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3472:3532" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3619:3764" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3646:3711" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3791:4065" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3818:4037" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3914:3972" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="3978:4017" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="4092:4363" ph="{...}" />
+            <marker date="1512278989791" expanded="true" signature="4170:4311" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/ige/examples/50-lander/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="50" column="59" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="59" />
+        <state relative-caret-position="1198">
+          <caret line="137" column="106" lean-forward="false" selection-start-line="137" selection-start-column="106" selection-end-line="137" selection-end-column="106" />
           <folding>
-            <element signature="e#1926#3907#0" expanded="false" />
+            <marker date="1512257027826" expanded="true" signature="29:4807" ph="{&quot;classId&quot;: 'Client'...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Balloon.js">
+    <entry file="file://$USER_HOME$/ige/examples/5.1-ui/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/PlayerBehaviour.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/ige/examples/50-lander/gameClasses/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="267" column="70" lean-forward="true" selection-start-line="267" selection-start-column="70" selection-end-line="267" selection-end-column="70" />
+        <state relative-caret-position="937">
+          <caret line="267" column="29" lean-forward="false" selection-start-line="267" selection-start-column="29" selection-end-line="267" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/index.html">
+    <entry file="file://$PROJECT_DIR$/experiments/chair_lift/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/multiballoons/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          <caret line="12" column="78" lean-forward="false" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/ClientConfig.js">
+    <entry file="file://$PROJECT_DIR$/experiments/multiballoons/gameClasses/Balloon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="287">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <marker date="1512286638024" expanded="true" signature="36:1667" ph="{&quot;classId&quot;: 'Balloon'...}" />
+            <marker date="1512286638024" expanded="true" signature="1663:1665" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/multiballoons/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="77" column="44" lean-forward="false" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/gameClasses/Chair.js">
+    <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/multiballoons/gameClasses/Chair.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/gameClasses/Chair.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/gameClasses/Lava.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/chair_rescue/gameClasses/Chair.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/chair_lift/client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/chairlift/client.js">
+    <entry file="file://$PROJECT_DIR$/experiments/chair_lift/gameClasses/Chair.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+        <state relative-caret-position="623">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding />
         </state>
       </provider>

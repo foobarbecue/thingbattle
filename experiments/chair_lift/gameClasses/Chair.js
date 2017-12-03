@@ -4,6 +4,7 @@ var Chair = IgeEntityBox2d.extend({
     init: function () {
         var self = this;
         IgeEntityBox2d.prototype.init.call(this);
+        self.balloons=[];
 
         self.box2dBody({
             type: 'dynamic',
@@ -37,9 +38,7 @@ var Chair = IgeEntityBox2d.extend({
                 self.texture(self._chairTexture)
                     .dimensionsFromTexture()
             }, false, true);
-
         }
-
     }
 });
 
