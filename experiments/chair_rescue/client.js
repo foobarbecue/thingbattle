@@ -5,7 +5,8 @@ var Client = IgeClass.extend({
 		// Load our textures
 		var self = this;
 		self.gameTextures = {};
-		self.balloons = [];
+		self.chairs = [];
+        self.balloons = [];
 
         // Create the HTML canvas
         ige.createFrontBuffer(true);
@@ -74,35 +75,39 @@ var Client = IgeClass.extend({
                 // Add lava
                 new Lava().mount(ige.$('baseScene'));
 
-                // Add Chair
-                self.chair = new Chair().mount(ige.$('baseScene'));
-                // Below balloon
-                self.chair.translateBy(0,300,0);
-
-                // Add Balloon
-                self.balloon = new Balloon();
-                self.balloon.mount(ige.$('baseScene'));
-
-
-
-                // Attach balloon to chair
-                // This will be a box2d.b2DistanceJoint
-                let djd = new ige.box2d.b2DistanceJointDef();
-                djd.Initialize(
-                    self.balloon._box2dBody,
-                    self.chair._box2dBody,
-                    self.balloon._box2dBody.GetWorldCenter(),
-                    self.chair._box2dBody.GetWorldCenter(),
-                );
-                ige.box2d._world.CreateJoint(djd);
-
-
-
+                let chair = self.addChair();
 
             }
         });
 
 	},
+    addChair: function(){
+        // Add Chair
+        let self = this;
+        let newChair = new Chair().mount(ige.$('baseScene'));
+        this.chairs.push(newChair);
+        newChair.mouseDown(function(){self.addBalloon(newChair)});
+        return newChair;
+    },
+    addBalloon: function (chair) {
+        // Add Balloon
+        let newBalloon = new Balloon();
+        this.balloons.push(newBalloon);
+        newBalloon.mount(ige.$('baseScene'));
+        // Above chair
+        newBalloon.translateBy(0,-300,0);
+
+        // Attach balloon to chair
+        let djd = new ige.box2d.b2DistanceJointDef();
+        djd.Initialize(
+            newBalloon._box2dBody,
+            chair._box2dBody,
+            newBalloon._box2dBody.GetWorldCenter(),
+            chair._box2dBody.GetWorldCenter()
+        );
+        ige.box2d._world.CreateJoint(djd);
+
+    }
 
 });
 

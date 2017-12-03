@@ -51,7 +51,7 @@ var Balloon = IgeEntityBox2d.extend({
     tick: function(ctx){
         // Apply lifting force each tick
         this._box2dBody.ApplyForce(
-            new ige.box2d.b2Vec2(0,-10), //force
+            new ige.box2d.b2Vec2(0,-0.1), //force
             new ige.box2d.b2Vec2(0,0)    //point
         )
         IgeEntity.prototype.tick.call(this, ctx)
