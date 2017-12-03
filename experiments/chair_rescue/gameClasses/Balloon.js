@@ -2,9 +2,13 @@ var Balloon = IgeEntityBox2d.extend({
     classId: 'Balloon',
 
     init: function () {
-        var self = this;
+        let self = this;
         IgeEntityBox2d.prototype.init.call(this);
 
+        let fixture_poly = new IgePoly2d();
+        fixture_poly.addPoint(-0.5,-1);
+        fixture_poly.addPoint(0.5,-1);
+        fixture_poly.addPoint(0,1);
         // Setup the entity
         self.addComponent(IgeVelocityComponent);
 
@@ -12,11 +16,11 @@ var Balloon = IgeEntityBox2d.extend({
         self.box2dBody({
             type: 'dynamic',
             linearDamping: 0.0,
-            angularDamping: 0.5,
+            angularDamping: 1,
             allowSleep: true,
             bullet: false,
             gravitic: false,
-            fixedRotation: false,
+            fixedRotation: true, // Balloons spin like crazy otherwise. I'm not sure why.
             fixtures: [{
                 density: 1,
                 filter: {
@@ -24,7 +28,8 @@ var Balloon = IgeEntityBox2d.extend({
                     maskBits: 0xffff
                 },
                 shape: {
-                    type: 'circle'
+                    type: 'polygon',
+                    data: fixture_poly
                 }
             }]
         });
@@ -51,7 +56,7 @@ var Balloon = IgeEntityBox2d.extend({
     tick: function(ctx){
         // Apply lifting force each tick
         this._box2dBody.ApplyForce(
-            new ige.box2d.b2Vec2(0,-0.1), //force
+            new ige.box2d.b2Vec2(0,-0.5), //force
             new ige.box2d.b2Vec2(0,0)    //point
         )
         IgeEntity.prototype.tick.call(this, ctx)

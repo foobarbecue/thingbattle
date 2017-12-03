@@ -26,30 +26,37 @@ Here's a list of a few things I discovered:
  Physics in box2d happens between fixtures that are attached to parent bodies. The fixtures can be set to a predefined
  shape such as 'circle' or you can set it to 'polygon,' in which case you pass an IgePoly2d. For example:
 
-         let fixture_poly = new IgePoly2d();
-         fixture_poly.addPoint(-1,-1);
-         fixture_poly.addPoint(0,-1);
-         fixture_poly.addPoint(-0.5,1);
+     let fixture_poly = new IgePoly2d();
+     fixture_poly.addPoint(-1,-1);
+     fixture_poly.addPoint(0,-1);
+     fixture_poly.addPoint(-0.5,1);
 
-         // Setup the box2d physics properties
-         self.box2dBody({
-             type: 'dynamic',
-             linearDamping: 0.0,
-             angularDamping: 0.5,
-             allowSleep: true,
-             bullet: false,
-             gravitic: false,
-             fixedRotation: true,
-             fixtures: [{
-                 density: 1,
-                 filter: {
-                     categoryBits: 0x0100,
-                     maskBits: 0xffff
-                 },
-                 shape: {
-                     type: 'polygon',
-                     data: fixture_poly
-                 }
-             }]
-         });
+     // Setup the box2d physics properties
+     self.box2dBody({
+         type: 'dynamic',
+         linearDamping: 0.0,
+         angularDamping: 0.5,
+         allowSleep: true,
+         bullet: false,
+         gravitic: false,
+         fixedRotation: true,
+         fixtures: [{
+             density: 1,
+             filter: {
+                 categoryBits: 0x0100,
+                 maskBits: 0xffff
+             },
+             shape: {
+                 type: 'polygon',
+                 data: fixture_poly
+             }
+         }]
+     });
+
+=Debugging tools=
+To debug ige, use:
+    ige.addComponent(IgeEditorComponent);
+
+To debug box2d physics, use:
+    ige.box2d.enableDebug(ige.$('baseScene'));
 

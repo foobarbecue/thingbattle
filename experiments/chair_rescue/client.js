@@ -76,6 +76,7 @@ var Client = IgeClass.extend({
                 new Lava().mount(ige.$('baseScene'));
 
                 let chair = self.addChair();
+                ige.box2d.enableDebug(ige.$('baseScene'));
 
             }
         });
@@ -95,14 +96,16 @@ var Client = IgeClass.extend({
         this.balloons.push(newBalloon);
         newBalloon.mount(ige.$('baseScene'));
         // Above chair
-        newBalloon.translateBy(0,-300,0);
+        newBalloon.translateBy(chair._translate.x+10, chair._translate.y-200, 0); // This is in ige ctx coords, not box2d coords
 
         // Attach balloon to chair
         let djd = new ige.box2d.b2DistanceJointDef();
+        let balloon_attachment_point = newBalloon._box2dBody.GetWorldCenter();
+        balloon_attachment_point.y += 1;
         djd.Initialize(
             newBalloon._box2dBody,
             chair._box2dBody,
-            newBalloon._box2dBody.GetWorldCenter(),
+            balloon_attachment_point,
             chair._box2dBody.GetWorldCenter()
         );
         ige.box2d._world.CreateJoint(djd);
