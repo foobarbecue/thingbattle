@@ -76,12 +76,12 @@ var Client = IgeClass.extend({
 
                 // Add Chair
                 self.chair = new Chair().mount(ige.$('baseScene'));
-                // Below balloon
-                self.chair.translateBy(0,300,0);
 
                 // Add Balloon
                 self.balloon = new Balloon();
-                self.balloon.mount(ige.$('baseScene'));
+                self.balloon.mount(self.chair);
+                // Above chair
+                self.balloon.translateBy(0,-150,0);
 
 
 
@@ -92,7 +92,7 @@ var Client = IgeClass.extend({
                     self.balloon._box2dBody,
                     self.chair._box2dBody,
                     self.balloon._box2dBody.GetWorldCenter(),
-                    self.chair._box2dBody.GetWorldCenter(),
+                    self.chair._box2dBody.GetWorldCenter()
                 );
                 ige.box2d._world.CreateJoint(djd);
 
