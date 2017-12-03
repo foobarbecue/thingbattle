@@ -8,10 +8,10 @@ var Chair = IgeEntityBox2d.extend({
         self.box2dBody({
             type: 'dynamic',
             linearDamping: 0.0,
-            angularDamping: 0.5,
+            angularDamping: 0.0,
             allowSleep: true,
-            bullet: false,
-            gravitic: true,
+            bullet: true,
+            gravitic: false,
             fixedRotation: false,
             fixtures: [{
                 density: 1,
@@ -40,7 +40,8 @@ var Chair = IgeEntityBox2d.extend({
 
         }
 
-    }
+    },
+
 });
 
 
