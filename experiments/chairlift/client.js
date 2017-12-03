@@ -75,14 +75,28 @@ var Client = IgeClass.extend({
                 new Lava().mount(ige.$('baseScene'));
 
                 // Add Chair
-                new Chair().mount(ige.$('baseScene'));
+                self.chair = new Chair().mount(ige.$('baseScene'));
+                // Below balloon
+                self.chair.translateBy(0,300,0);
 
                 // Add Balloon
-                let newBalloon = new Balloon();
-                newBalloon.mount(ige.$('baseScene'));
+                self.balloon = new Balloon();
+                self.balloon.mount(ige.$('baseScene'));
+
+
 
                 // Attach balloon to chair
                 // This will be a box2d.b2DistanceJoint
+                let djd = new ige.box2d.b2DistanceJointDef();
+                djd.Initialize(
+                    self.balloon._box2dBody,
+                    self.chair._box2dBody,
+                    self.balloon._box2dBody.GetWorldCenter(),
+                    self.chair._box2dBody.GetWorldCenter(),
+                );
+                ige.box2d._world.CreateJoint(djd);
+
+
 
 
             }

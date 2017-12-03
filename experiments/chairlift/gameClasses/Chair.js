@@ -1,9 +1,29 @@
-var Chair = IgeUiEntity.extend({
+var Chair = IgeEntityBox2d.extend({
     classId: 'Chair',
 
     init: function () {
         var self = this;
-        IgeUiEntity.prototype.init.call(this);
+        IgeEntityBox2d.prototype.init.call(this);
+
+        self.box2dBody({
+            type: 'dynamic',
+            linearDamping: 0.0,
+            angularDamping: 0.5,
+            allowSleep: true,
+            bullet: false,
+            gravitic: true,
+            fixedRotation: false,
+            fixtures: [{
+                density: 1,
+                filter: {
+                    categoryBits: 0x0100,
+                    maskBits: 0xffff
+                },
+                shape: {
+                    type: 'circle'
+                }
+            }]
+        });
 
         // Setup the entity
         self.addComponent(IgeVelocityComponent);
