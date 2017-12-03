@@ -1,0 +1,55 @@
+=Problems with examples=
+
+Many of the IGE examples are broken. Many of them are full of cruft. It's often unclear what they're supposed to do.
+Here's a list of a few things I discovered:
+
+ - 5.1-ui is supposed to show a lot of text but doesn't. This is because it contains text elements like IgeUiLabel and
+ IgeUiDropDown which are broken but can be fixed by applying the change in this commit:
+ https://github.com/Irrelon/ige/commit/f6b7c52daf599ab3436964dc9b7930ff440fda40
+
+ - 6.2-physics and 6.3-physics-contacts are simple physics simulations with dropped objects. 6.3 is different because
+ one of the contacts between a circle and a square is disabled, so they roll through each other. For some reason, these
+ examples load bunch of gameClasses as if they were a game with a player. There appears to be no point to this other
+ than sowing confusion.
+
+ - 24.3-multiplayer-webgl uses three.js to render a spaceship with a turret that I think is supposed to rotate in
+ response to mouse or keyboard commands. It doesn't.
+
+ =Box2D=
+
+ Box2D is a physics engine built into IGE. I think the version in IGE is converted from the original C++ Box2D or
+ something. I haven't found a good reference for the version in IGE, but it is at least 4 years old. I haven't found
+ any Box2D version info in IGE.
+
+ =Box2D polygon fixtures=
+
+ Physics in box2d happens between fixtures that are attached to parent bodies. The fixtures can be set to a predefined
+ shape such as 'circle' or you can set it to 'polygon,' in which case you pass an IgePoly2d. For example:
+
+         let fixture_poly = new IgePoly2d();
+         fixture_poly.addPoint(-1,-1);
+         fixture_poly.addPoint(0,-1);
+         fixture_poly.addPoint(-0.5,1);
+
+         // Setup the box2d physics properties
+         self.box2dBody({
+             type: 'dynamic',
+             linearDamping: 0.0,
+             angularDamping: 0.5,
+             allowSleep: true,
+             bullet: false,
+             gravitic: false,
+             fixedRotation: true,
+             fixtures: [{
+                 density: 1,
+                 filter: {
+                     categoryBits: 0x0100,
+                     maskBits: 0xffff
+                 },
+                 shape: {
+                     type: 'polygon',
+                     data: fixture_poly
+                 }
+             }]
+         });
+
