@@ -63,3 +63,8 @@ To debug box2d physics, use:
 =Animation=
 Animated gifs don't seem to work, but there's some system where you make an image with lots of regions and cycle through
 them. Tools / animation editor in the Editor seems to be for this purpose.
+
+=Multiplayer=
+24.2-multiplayer works, but blank_game_multiplayer does not (despite having an identical readme). blank_game_multiplayer
+just doesn't load any multiplayer stuff in client or server config, despite containing the classes for a game where
+each player has a ship.

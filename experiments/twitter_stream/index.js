@@ -7,6 +7,7 @@ var Game = IgeClass.extend({
 
 		if (ige.isClient) {
 			ige.client = new App();
+
 		}
 
 		if (ige.isServer) {

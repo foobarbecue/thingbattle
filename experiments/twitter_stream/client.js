@@ -2,8 +2,6 @@ var Client = IgeClass.extend({
 	classId: 'Client',
 
 	init: function () {
-		//ige.timeScale(0.1);
-		ige.addComponent(IgeEditorComponent);
 
 		// Load our textures
 		var self = this;
@@ -11,12 +9,13 @@ var Client = IgeClass.extend({
 		// Enable networking
 		ige.addComponent(IgeNetIoComponent);
 
+        this.implement(ClientNetworkEvents);
 		// Create the HTML canvas
 		ige.createFrontBuffer(true);
 
 		// Load the textures we want to use
 		this.textures = {
-			ship: new IgeTexture('./assets/PlayerTexture.js')
+			ship: new IgeTexture('../../assets/balloon.svg')
 		};
 
 		ige.on('texturesLoaded', function () {
@@ -31,15 +30,8 @@ var Client = IgeClass.extend({
 					// got a username or something?
 					ige.network.start('http://localhost:2000', function () {
 						// Setup the network stream handler
-						ige.network.addComponent(IgeStreamComponent)
-							.stream.renderLatency(80) // Render the simulation 160 milliseconds in the past
-							// Create a listener that will fire whenever an entity
-							// is created because of the incoming stream data
-							.stream.on('entityCreated', function (entity) {
-								self.log('Stream entity created with ID: ' + entity.id());
 
-							});
-						
+                        ige.network.define('test', self._onTest);
 						// Load the base scene data
 						ige.addGraph('IgeBaseScene');
 					});
