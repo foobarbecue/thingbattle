@@ -60,3 +60,6 @@ To debug ige, use:
 To debug box2d physics, use:
     ige.box2d.enableDebug(ige.$('baseScene'));
 
+=Animation=
+Animated gifs don't seem to work, but there's some system where you make an image with lots of regions and cycle through
+them. Tools / animation editor in the Editor seems to be for this purpose.

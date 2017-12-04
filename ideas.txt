@@ -4,3 +4,5 @@ Maybe they enter the atmosphere like meteorites. Then they would be tweeteorites
 
 Maybe you need to add parachutes or sprinkle them with water to keep them cool. I guess the parachute idea is a bit like
 Lemmings.
+
+If tweets get high enough in the sky (above a floating red line), then everybody, or a subset of everybody, re-tweets it.
