@@ -22,7 +22,8 @@ var Server = IgeClass.extend({
 
 	init: function (options) {
 		var self = this;
-		self.balloons = [];
+        self.balloons = [];
+        self.tweets = [];
 		self.implement(ServerNetworkEvents);
 		// Add the networking component
 		ige.addComponent(IgeNetIoComponent)
@@ -57,9 +58,27 @@ var Server = IgeClass.extend({
 			});
 	},
 
-	addTwitterText: function(){
-
-	}
+	addTweet: function() {
+		console.log('adding tweet')
+		let newTweet = new IgeFontEntity()
+            .id('font1')
+            .depth(1)
+            .width(213)
+            .height(110)
+            .textAlignX(0)
+            .colorOverlay('#ffffff')
+            .nativeFont('26pt Arial')
+            .nativeStroke(6)
+            .nativeStrokeColor('#666666')
+            .textLineSpacing(0)
+            .text('Tweet text')
+            .center(0)
+            .middle(0);
+		this.tweets.push(newTweet);
+		newTweet.streamMode(1)
+			.mount(ige.$('baseScene'))
+            .velocity.y(-0.01);
+    },
 
     addBalloon: function() {
         let newBalloon = new Balloon();

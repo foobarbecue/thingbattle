@@ -5,11 +5,11 @@ var Client = IgeClass.extend({
 
 		// Load our textures
 		var self = this;
+		self.tweets = [];
 
 		// Enable networking
 		ige.addComponent(IgeNetIoComponent);
-
-        this.implement(ClientNetworkEvents);
+		
 		// Create the HTML canvas
 		ige.createFrontBuffer(true);
 
@@ -31,14 +31,34 @@ var Client = IgeClass.extend({
 					ige.network.start('http://localhost:2000', function () {
 						// Setup the network stream handler
 
-                        ige.network.define('test', self._onTest);
+                        ige.network.define('test', self.addTweet);
 						// Load the base scene data
 						ige.addGraph('IgeBaseScene');
 					});
 				}
 			});
 		});
-	}
+	},
+    addTweet: function(data) {
+		var self = this;
+        console.log('adding tweet')
+        let newTweet = new IgeFontEntity()
+            .depth(1)
+            .width(213)
+            .height(110)
+            .textAlignX(0)
+            .colorOverlay('#ffffff')
+            .nativeFont('26pt Arial')
+            .nativeStroke(6)
+            .nativeStrokeColor('#666666')
+            .textLineSpacing(0)
+            .text(data.text)
+            .center(0)
+            .middle(0);
+        ige.client.tweets.push(newTweet);
+        newTweet.mount(ige.$('baseScene'))
+            // .velocity.y(-0.01);
+    },
 });
 
 if (typeof(module) !== 'undefined' && typeof(module.exports) !== 'undefined') { module.exports = Client; }
