@@ -10,11 +10,7 @@ var keys = {
 
 var Twitter = new tsapi(keys, true);
 
-Twitter.stream('statuses/filter', {
-    track: 'javascript'
-});
-
-
+Twitter.stream('statuses/filter',{track:'music'});
 
 var Server = IgeClass.extend({
 	classId: 'Server',
@@ -51,7 +47,9 @@ var Server = IgeClass.extend({
 						ige.addGraph('IgeBaseScene');
 
                         Twitter.on('data',
-							function(obj){ige.network.send('test',obj)});
+							function(obj){
+								ige.network.send('test',obj)
+                        	});
 
                     }
 				});
@@ -59,7 +57,7 @@ var Server = IgeClass.extend({
 	},
 
 	addTweet: function() {
-		console.log('adding tweet')
+		// console.log('adding tweet')
 		let newTweet = new IgeFontEntity()
             .id('font1')
             .depth(1)

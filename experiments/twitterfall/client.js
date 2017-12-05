@@ -2,14 +2,14 @@ var Client = IgeClass.extend({
 	classId: 'Client',
 
 	init: function () {
-
+		ige.addComponent(IgeEditorComponent);
 		// Load our textures
 		var self = this;
 		self.tweets = [];
 
 		// Enable networking
 		ige.addComponent(IgeNetIoComponent);
-		
+
 		// Create the HTML canvas
 		ige.createFrontBuffer(true);
 
@@ -41,20 +41,23 @@ var Client = IgeClass.extend({
 	},
     addTweet: function(data) {
 		var self = this;
-        console.log('adding tweet')
+        console.log('adding tweet');
         let newTweet = new IgeFontEntity()
             .depth(1)
-            .width(213)
-            .height(110)
+            .width(ige.$('baseScene').width())
+            .height(ige.$('baseScene').height())
             .textAlignX(0)
             .colorOverlay('#ffffff')
-            .nativeFont('26pt Arial')
-            .nativeStroke(6)
-            .nativeStrokeColor('#666666')
+            .nativeFont('10pt Arial')
+            // .nativeStroke(6)
+            // .nativeStrokeColor('#666666')
             .textLineSpacing(0)
-            .text(data.text)
             .center(0)
-            .middle(0);
+            .middle(0)
+			.text(data.text)
+			.mount(ige.$('baseScene'));
+
+
         ige.client.tweets.push(newTweet);
         newTweet.mount(ige.$('baseScene'))
             // .velocity.y(-0.01);
